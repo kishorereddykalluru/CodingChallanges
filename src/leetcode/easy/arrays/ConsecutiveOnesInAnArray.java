@@ -12,13 +12,18 @@ public class ConsecutiveOnesInAnArray {
         int max = 0;
         int count = 0;
         for(int i = 0; i < array.length; i++) {
-            if(array[i] == 1){
-                count++;
-            } else {
-                count = 0;
-            }
-            max = Math.max(count, max);
+            max = Math.max(max, count = (array[i] == 1) ? count+1 :  0);
         }
+        /* below code can be replaced like above
+            for(int i = 0; i < array.length; i++{
+                if(array[i] == 1) {
+                    count++;
+                    max = Math.max(count, max);
+                } else {
+                    count = 0;
+                }
+            }
+         */
         return max;
     }
 }
