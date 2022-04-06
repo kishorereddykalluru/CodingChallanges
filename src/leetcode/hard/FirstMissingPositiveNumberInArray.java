@@ -38,7 +38,7 @@ public class FirstMissingPositiveNumberInArray {
 
     public static void main(String[] args) {
 
-        int[] nums = {1,2,3,4};
+        int[] nums = {-4, 1, 2, 95,4,5,100};
         System.out.println(firstMissingPositiveNumber(nums));
 
     }

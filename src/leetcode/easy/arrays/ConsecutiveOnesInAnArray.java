@@ -11,8 +11,8 @@ public class ConsecutiveOnesInAnArray {
     private static int findMaxConsecutiveOnes(int[] array) {
         int max = 0;
         int count = 0;
-        for(int i = 0; i < array.length; i++) {
-            max = Math.max(max, count = (array[i] == 1) ? count+1 :  0);
+        for(int i : array) {
+            max = Math.max(max, count = (i == 1) ? count+1 :  0);
         }
         /* below code can be replaced like above
             for(int i = 0; i < array.length; i++{
