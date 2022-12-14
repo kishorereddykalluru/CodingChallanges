@@ -2,7 +2,7 @@ package algoexpert.linkedlist.hard;
 
 import algoexpert.linkedlist.LinkedList;
 
-public class MergetLinkedList {
+public class MergeLinkedList {
 
 
     public static LinkedList mergeLinkedLists(LinkedList headOne, LinkedList headTwo) {
